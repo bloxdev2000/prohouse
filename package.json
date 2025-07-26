@@ -1,5 +1,6 @@
 {
   "name": "pro-house",
+  "homepage": "https://bloxdev2000.github.io/prohouse",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -34,12 +35,12 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "predeploy": "concurrently \"node server/server.js\" \"npm run build\"",
-    "deploy": "concurrently \"node server/server.js\" \"gh-pages -d build\"",
-    "start": "concurrently \"node server/server.js\" \"react-scripts start\"",
-    "build": "concurrently \"node server/server.js\" \"react-scripts build\"",
-    "test": "concurrently \"node server/server.js\" \"react-scripts test\"",
-    "eject": "concurrently \"node server/server.js\" \"react-scripts eject\""
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
